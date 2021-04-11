@@ -432,7 +432,7 @@ border-radius: .5rem;
     text-align: initial;
   }
   .about__img img{
-    width: 300px;
+    width: 200px;
   }
   .work__container{
     grid-template-columns: repeat(3, 1fr);
