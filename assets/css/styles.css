@@ -302,6 +302,9 @@ border-radius: .5rem;
 .skills__php{
   width: 80%;
 }
+.skills__mysql{
+  width: 80%;
+}
 .skills__ux{
   width: 25%;
 }
