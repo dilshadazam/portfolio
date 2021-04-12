@@ -138,7 +138,7 @@ img{
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: var(--second-color);
+    background-color:red;
     transition: .5s;
   }
 }
@@ -299,6 +299,9 @@ border-radius: .5rem;
 }
 .skills__js{
   width: 65%;
+}
+.skills__php{
+  width: 70%;
 }
 .skills__ux{
   width: 25%;
