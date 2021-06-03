@@ -299,6 +299,9 @@ border-radius: .5rem;
 .skills__js{
   width: 65%;
 }
+.skills__react{
+  width: 50%;
+}
 .skills__php{
   width: 80%;
 }
