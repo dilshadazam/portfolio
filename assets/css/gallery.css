@@ -1,0 +1,235 @@
+
+/* =====================================
+   GALLERY PAGE - RESPONSIVE DESIGN
+===================================== */
+
+.gallery-main {
+    width: min(100% - 40px, 1100px);
+    margin: 0 auto;
+    padding: 30px 0 60px;
+}
+
+/* Page introduction */
+.gallery-intro {
+    padding: 25px 0 30px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.gallery-breadcrumb {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #54595d;
+}
+
+.gallery-intro h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 400;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.gallery-intro > p {
+    color: #54595d;
+    max-width: 700px;
+}
+
+.gallery-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #54595d;
+}
+
+/* Gallery sections */
+.gallery-section {
+    padding: 35px 0;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.gallery-description {
+    color: #54595d;
+    margin: -10px 0 25px;
+}
+
+/* Responsive grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* Gallery cards */
+.gallery-card {
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #a2a9b1;
+    border-radius: 3px;
+    background: #fff;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+/* Certificate image */
+.gallery-image-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.gallery-image-link img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .gallery-image-link img {
+    transform: scale(1.03);
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    background: rgba(0, 0, 0, 0.65);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+}
+
+.gallery-card:hover .image-overlay {
+    opacity: 1;
+}
+
+/* Card information */
+.gallery-card-content {
+    padding: 16px;
+    border-top: 1px solid #eaecf0;
+}
+
+.gallery-category {
+    display: inline-block;
+    padding: 3px 8px;
+    background: #eaecf0;
+    color: #54595d;
+    font-size: 11px;
+    border-radius: 2px;
+    margin-bottom: 9px;
+}
+
+.gallery-card-content h3 {
+    font-family: Georgia, serif;
+    color: #0645ad;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.gallery-card-content p {
+    color: #54595d;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Personal gallery */
+.personal-card {
+    background: #f8f9fa;
+}
+
+.personal-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .gallery-image-link img {
+        height: 200px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+    .gallery-main {
+        width: calc(100% - 30px);
+        padding-top: 20px;
+    }
+
+    .gallery-intro {
+        padding-top: 15px;
+    }
+
+    .gallery-intro h1 {
+        font-size: 27px;
+    }
+
+    .gallery-meta {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .gallery-image-link img {
+        height: auto;
+        min-height: 190px;
+        max-height: 260px;
+    }
+
+    .personal-card img {
+        height: auto;
+        max-height: 350px;
+        object-fit: contain;
+    }
+
+    .gallery-section {
+        padding: 25px 0;
+    }
+
+    .gallery-card-content {
+        padding: 14px;
+    }
+}
+
+/* Very small mobile */
+@media screen and (max-width: 360px) {
+    .gallery-main {
+        width: calc(100% - 24px);
+    }
+
+    .gallery-intro h1 {
+        font-size: 23px;
+    }
+
+    .gallery-card-content h3 {
+        font-size: 16px;
+    }
+}

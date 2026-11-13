@@ -1,0 +1,536 @@
+
+/* ==========================================
+   WIKIPEDIA INSPIRED PORTFOLIO
+   Md Dilshad Azam
+========================================== */
+
+:root {
+    --wiki-blue: #0645ad;
+    --wiki-link: #3366cc;
+    --wiki-border: #a2a9b1;
+    --wiki-background: #ffffff;
+    --wiki-light: #f8f9fa;
+    --wiki-text: #202122;
+    --wiki-muted: #54595d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    background: var(--wiki-background);
+    color: var(--wiki-text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+a {
+    color: var(--wiki-link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+
+.l-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid var(--wiki-border);
+    box-shadow: none;
+}
+
+.nav {
+    width: min(100% - 40px, 1400px);
+    height: 65px;
+    margin: auto;
+}
+
+.nav__logo {
+    color: var(--wiki-text);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__item {
+    margin: 0;
+}
+
+.nav__link {
+    color: var(--wiki-blue);
+    font-size: 13px;
+}
+
+.nav__link:hover::after,
+.active::after {
+    display: none;
+}
+
+.nav__toggle {
+    color: var(--wiki-text);
+}
+
+/* SIDEBAR */
+
+.wiki-sidebar {
+    position: fixed;
+    top: 90px;
+    left: 25px;
+    width: 195px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid var(--wiki-border);
+    border-radius: 3px;
+    z-index: 10;
+}
+
+.wiki-sidebar h3 {
+    font-size: 15px;
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--wiki-border);
+}
+
+.wiki-sidebar a {
+    display: block;
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+/* MAIN ARTICLE */
+
+.l-main {
+    width: min(100% - 40px, 1050px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 0 50px;
+}
+
+.section {
+    padding: 30px 0;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.section-title {
+    text-align: left;
+    color: var(--wiki-text);
+    font-size: 26px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--wiki-border);
+    padding-bottom: 8px;
+    margin: 0 0 25px;
+}
+
+.section-title::after {
+    display: none;
+}
+
+/* INTRODUCTION */
+
+.home {
+    min-height: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 0.6fr;
+    align-items: center;
+    gap: 35px;
+    padding: 25px 0 40px;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.home__title {
+    font-family: Georgia, serif;
+    font-size: clamp(30px, 4vw, 42px);
+    line-height: 1.25;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.home__title-color {
+    color: var(--wiki-text);
+}
+
+.home__subtitle {
+    color: var(--wiki-muted);
+    font-size: 17px;
+    font-weight: 400;
+    margin: 12px 0;
+}
+
+.portfolio__tagline {
+    max-width: 650px;
+    line-height: 1.9;
+}
+
+.home__img {
+    position: static;
+    width: 100%;
+    max-width: 250px;
+    justify-self: end;
+}
+
+.home__img img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.home__social {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.home__social-icon {
+    color: var(--wiki-blue);
+    font-size: 22px;
+    margin: 0;
+}
+
+.button {
+    display: inline-block;
+    background: var(--wiki-light);
+    color: var(--wiki-blue);
+    border: 1px solid var(--wiki-border);
+    border-radius: 3px;
+    padding: 7px 14px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.button:hover {
+    background: #eaecf0;
+    box-shadow: none;
+    transform: none;
+}
+
+/* ABOUT / BIOGRAPHY */
+
+.about__container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    align-items: start;
+    gap: 25px;
+    text-align: left;
+}
+
+.about__img {
+    background: var(--wiki-light);
+    border: 1px solid var(--wiki-border);
+    padding: 12px;
+    text-align: center;
+}
+
+.about__img img {
+    width: 100%;
+    max-width: 230px;
+    max-height: 280px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.about__img h4 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.about__subtitle {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.about__text {
+    line-height: 1.9;
+}
+
+/* EXPERIENCE AND PROJECTS */
+
+.experience__container,
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.experience__card,
+.project__card {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid var(--wiki-border);
+    border-radius: 2px;
+    box-shadow: none;
+    min-width: 0;
+}
+
+.experience__card h3,
+.project__card h3 {
+    font-family: Georgia, serif;
+    font-size: 19px;
+    color: var(--wiki-blue);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.experience__card h4,
+.project__card h4 {
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.experience__date {
+    font-size: 13px;
+    color: var(--wiki-muted);
+    margin: 8px 0 15px;
+}
+
+.experience__card ul,
+.project__card ul {
+    padding-left: 20px;
+    list-style: disc;
+    margin: 15px 0;
+}
+
+.experience__card li,
+.project__card li {
+    margin-bottom: 7px;
+}
+
+.project__card:first-child {
+    grid-column: span 2;
+}
+
+/* SKILLS */
+
+.skills__container {
+    text-align: left;
+}
+
+.skill__groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.skill__group {
+    padding: 18px;
+    background: var(--wiki-light);
+    border: 1px solid var(--wiki-border);
+    box-shadow: none;
+    border-radius: 2px;
+}
+
+.skill__group h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.skill__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.skill__tag,
+.project__tech span {
+    display: inline-block;
+    background: #eaecf0;
+    color: #202122;
+    padding: 4px 9px;
+    border: 1px solid #c8ccd1;
+    border-radius: 2px;
+    font-size: 12px;
+}
+
+/* EDUCATION */
+
+.education__card {
+    background: var(--wiki-light);
+    border: 1px solid var(--wiki-border);
+    border-left: 3px solid var(--wiki-blue);
+    border-radius: 2px;
+    box-shadow: none;
+    padding: 20px;
+}
+
+/* CONTACT */
+
+.contact__details {
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+    line-height: 2.2;
+}
+
+.contact__details a {
+    color: var(--wiki-blue);
+}
+
+/* FOOTER */
+
+.footer {
+    background: var(--wiki-light);
+    color: var(--wiki-muted);
+    border-top: 1px solid var(--wiki-border);
+    padding: 25px 15px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.footer__title {
+    font-size: 18px;
+    color: var(--wiki-text);
+    margin-bottom: 8px;
+}
+
+.footer__icon {
+    color: var(--wiki-blue);
+}
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+    .wiki-sidebar {
+        display: none;
+    }
+
+    .l-main {
+        width: min(100% - 40px, 950px);
+        margin: auto;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+    .nav {
+        height: 60px;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: min(85%, 320px);
+        height: calc(100vh - 60px);
+        padding: 25px;
+        background: #fff;
+        border-left: 1px solid var(--wiki-border);
+        overflow-y: auto;
+        transition: right 0.3s ease;
+    }
+
+    .nav__menu.show {
+        right: 0;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav__item {
+        margin: 0;
+    }
+
+    .nav__link {
+        color: var(--wiki-blue);
+        font-size: 15px;
+    }
+
+    .l-main {
+        width: calc(100% - 30px);
+        padding-top: 15px;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .home__img {
+        order: -1;
+        justify-self: start;
+        max-width: 180px;
+    }
+
+    .home__title {
+        font-size: 30px;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+    }
+
+    .about__img {
+        max-width: 280px;
+        margin: auto;
+    }
+
+    .experience__container,
+    .projects__container,
+    .skill__groups {
+        grid-template-columns: 1fr;
+    }
+
+    .project__card:first-child {
+        grid-column: auto;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .section {
+        padding: 25px 0;
+    }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+    .home__title {
+        font-size: 26px;
+    }
+
+    .home__subtitle {
+        font-size: 14px;
+    }
+
+    .experience__card,
+    .project__card,
+    .skill__group {
+        padding: 14px;
+    }
+}

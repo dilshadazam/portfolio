@@ -1,294 +1,823 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <meta name="description" content="Md Dilshad Azam - Full Stack Developer with 4+ years of experience in React.js, Node.js, Express.js, MySQL, MongoDB, Redis, AWS and enterprise application development.">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="keywords" content="Dilshad Azam, Full Stack Developer, MERN Stack Developer, React Developer, Node.js Developer, Redis, AWS, Bangalore">
 
-        <title>Er Md Dilshad Azam</title>
+    <meta name="author" content="Md Dilshad Azam">
+
+    <title>Md Dilshad Azam | Full Stack Developer</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="icon" href="favicon.ico">
-       
-    </head>
-    <body>
-        
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABK0lEQVRIS+2U4Q0BQRCF7yqgA1eCDkQFdIAKtKAEHTgVoAM6UAIdUAHzyY7MbXZvl+R+MclL2B3vzZudURYdR9kxf/EbApW0cSKYC/qCveAoOAluqRbHWmRJhy0kCIGD4BzKswK5pDE93CCGQ9xdSLQCj5TdD+9f3FaAVtDnqWDwIZlN38qX2rmJjikiil6G2N2RrrU1+pvUHjA1KsQk+XGVA0ipODhRIQEeZyfAqp2MyonRRsggBRqczwRjW0VIwD429ytHhLAfOFwKIKcAosGZI6CCuKFiZt4S+6JfCwQMBI+SAvRXJ4eKsZ8bTBPu3hFqEYSbXEYvb+Ha2CrAJUvH+I0yhaicwvibaERqDyrJ1j3gs91wdoCHh7SOFZISyDQQT/sLJFvYeYueOQc3GfhSLHQAAAAASUVORK5CYII="/><b>Er Md Dilshad Azam</b</a>
-                </div>
+    <link rel="stylesheet" href="assets/css/wiki.css">
+     <link rel="icon" href="favicon.ico">
 
-                <div class="nav__menu " id="nav-menu"  >
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+   
+<!-- WIKIPEDIA STYLE CONTENTS SIDEBAR -->
+<aside class="wiki-sidebar">
+    <h3>Contents</h3>
+    <a href="#home">Introduction</a>
+    <a href="#about">Biography</a>
+    <a href="#experience">Career</a>
+    <a href="#skills">Technical expertise</a>
+    <a href="#projects">Major projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <a href="gallery.html">Achievements</a>
+</aside>
+    <style>
+        /* Additional portfolio styles */
+        .home__subtitle {
+            font-size: 1.1rem;
+            margin: 15px 0;
+            color: var(--second-color);
+        }
 
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <!-- <li class="nav__item"><a href="#work" class="nav__link">Work</a></li> -->
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                         
-                        <li class="nav__item"><a href="gallery.html" class="nav__link">Achievements<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABUUlEQVRIS82UjTEEQRCF7yIgAycCROBkQAYnAiUCKwJE4ESACJwMiMDJgAh4X9VrtXZvZvaWLbrqVddMzfTr//FoYBkPbH/UhWBTTpwIh8KuHXqSvhOuhLeckyWCmT5fCJCsEoyfCvMUSY4A49f+eC99KSx8nkpXwr7PR46oxZMiwOMXe36c8RCSM6dp2/obSYogPuI5uc8JURHJuaPqREARd4SDWlpSJKTrQeDPXvNRKoIPPyw1QdhLvv8zgj4pelY4MSdfmSoVmWGiBX+9yLTpUthwZ9Ahq6TSJW36LkyE1lTnikh73trqwkSPPk9tGI2sPWjhbXRHIUvpnVZqwyBg3xBRrAYioT7sKSRppytB73b+VwQzF5aUVMKNUJz4rhEsZWzSqHT97sc1wParPY8ItmqEvQlYGQwdKZk3IiBl3DNcrRURb0spathc/zg4wSdaJUYZ1oX18wAAAABJRU5ErkJggg=="/></a> <div>
-  
-    </div></li>
-                                          
-  
+        .portfolio__tagline {
+            line-height: 1.8;
+            max-width: 600px;
+        }
 
-                    </ul>
-  
-                    
-                </div>
+        .experience__container,
+        .projects__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-        
-        <main class="l-main">
-            <!--===== HOME =====-->
- 
-           
-            <section class="home bd-grid" id="home">
-                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Dilshad</span><br> MERN STACK DEV</h1>
-                     <a href="./gallery.html" target="_blank" class="button">Javascript | TypeScript | AWS Cloud | MERN STACK | Github</a> 
+        .experience__card,
+        .project__card {
+            padding: 25px;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 4px 20px rgba(14, 36, 49, 0.10);
+        }
+
+        .experience__card h3,
+        .project__card h3 {
+            color: var(--first-color);
+            margin-bottom: 10px;
+        }
+
+        .experience__date {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .project__card ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .project__tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .project__tech span,
+        .skill__tag {
+            padding: 7px 12px;
+            border-radius: 5px;
+            background: #eaf4ff;
+            color: #1261a0;
+            font-size: 0.85rem;
+        }
+
+        .skill__groups {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .skill__group {
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(14, 36, 49, 0.08);
+        }
+
+        .skill__group h3 {
+            margin-bottom: 15px;
+            color: var(--first-color);
+        }
+
+        .skill__tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .education__card {
+            padding: 25px;
+            border-left: 4px solid var(--first-color);
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(14, 36, 49, 0.08);
+        }
+
+        .contact__details {
+            text-align: center;
+            line-height: 2.3;
+        }
+
+        .contact__details a {
+            color: var(--first-color);
+        }
+
+        @media screen and (min-width: 768px) {
+            .experience__container,
+            .projects__container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .project__card:first-child {
+                grid-column: span 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+
+            <div>
+                <a href="#home" class="nav__logo">
+                    <b>Md Dilshad Azam</b>
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="gallery.html" class="nav__link">Achievements</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu"></i>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="l-main">
+
+        <!-- HOME -->
+        <section class="home bd-grid" id="home">
+
+            <div class="home__data">
+
+                <h1 class="home__title">
+                    Hi,<br>
+                    I'm <span class="home__title-color">Dilshad Azam</span><br>
+                    Full Stack Developer
+                </h1>
+
+                <h2 class="home__subtitle">
+                    React.js | Node.js | Express.js | MySQL
+                </h2>
+
+                <p class="portfolio__tagline">
+                    Building scalable enterprise applications, secure REST APIs,
+                    responsive user interfaces and high-performance backend systems.
+                </p>
+
+                <br>
+
+                <a href="#projects" class="button">
+                    Explore My Projects
+                </a>
 
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/md-dilshad-a-0b9308110/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://wa.me/qr/SRRZM3CYCPUFE1" class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a>
-                    <a href="https://github.com/dilshadazam" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+
+                    <a href="https://www.linkedin.com/in/md-dilshad-a-0b9308110/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="home__social-icon"
+                       aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+
+                    <a href="https://github.com/dilshadazam"
+                       target="_blank" rel="noopener noreferrer"
+                       class="home__social-icon"
+                       aria-label="GitHub">
+                        <i class="bx bxl-github"></i>
+                    </a>
+
+                    <a href="https://wa.me/qr/SRRZM3CYCPUFE1"
+                       target="_blank" rel="noopener noreferrer"
+                       class="home__social-icon"
+                       aria-label="WhatsApp">
+                        <i class="bx bxl-whatsapp"></i>
+                    </a>
+
                 </div>
 
-
-                <div class="home__img">
-                    <img src="assets/img/profile1.png" alt="">
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-          <section class="about section" id="about">
-    <h2 class="section-title">About</h2>
-
-    <div class="about__container bd-grid">
-        <div class="about__img">
-            <img src="assets/img/profilee.jpeg" alt="">
-            <h4 style="font-family: Arial, sans-serif;">Software Developer</h4>
-        </div>
-
-        <div>
-            <h2 class="about__subtitle" style="font-family: Arial, sans-serif;">Meet Dilshad</h2>
-            <p class="about__text" style="font-family: Arial, sans-serif;">As a diligent, hardworking, and result-oriented individual, I consistently strive for excellence in every project I undertake.
-                <br><br>
-                Graduating from the esteemed <a href="https://vvit.org/">Vidya Vihar Institute Of Technology</a> with a degree in Computer Science and Engineering in 2021, I embarked on a journey to fulfill my passion for technology.
-                <br><br>
-                Currently, I am leveraging my skills and knowledge as a Software Developer at Sequro Technology Pvt. Ltd. Here, I am dedicated to crafting innovative solutions and pushing boundaries to achieve remarkable results.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div> 
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-react skills__icon' ></i>
-                                <span class="skills__name">React</span>
-                            </div>
-                            <div class="skills__bar skills__react">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                         <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-nodejs skills__icon' ></i>
-                                <span class="skills__name">Nodejs</span>
-                            </div>
-                            <div class="skills__bar skills__nodejs">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">85%</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABE0lEQVRIS+1VbQ3CMBTcFIADQAE4oBKQMAmgAFAAOBgOkAAOwAE4AAVwR16XrenHG8l+kOwll6bNrXfvdX3Ns44j73j/LCVQwMAcGAPGMXPG/A5wPIaMhgS48Q4YKjN8grcCSpfvE9iAtBbiDeNJXNItwWBGhAEWwFTWtxj5fRU+AboZiKO96ygwX2KdGdPAJCXwFgI/OrQUIL1h2peBFSD5CtgSPcQh11meEWAAlmgWqkpM4CWl0iRR56ozILEQl3TM37UeF8mIGRI2c7VAfwbfcsYOuT+DZIn+9x7YZvfLPWA74aWsItWu2/YivgmNDhx7cEhk29YEz4sZly5Z82QaSTvUi86+ja1QSkDjPsrpXOADY95aGdtA/tAAAAAASUVORK5CYII="/></i>
-                                <span class="skills__name">MONGO DB</span>
-                            </div>
-                            <div class="skills__bar skills__php">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABE0lEQVRIS+1VbQ3CMBTcFIADQAE4oBKQMAmgAFAAOBgOkAAOwAE4AAVwR16XrenHG8l+kOwll6bNrXfvdX3Ns44j73j/LCVQwMAcGAPGMXPG/A5wPIaMhgS48Q4YKjN8grcCSpfvE9iAtBbiDeNJXNItwWBGhAEWwFTWtxj5fRU+AboZiKO96ygwX2KdGdPAJCXwFgI/OrQUIL1h2peBFSD5CtgSPcQh11meEWAAlmgWqkpM4CWl0iRR56ozILEQl3TM37UeF8mIGRI2c7VAfwbfcsYOuT+DZIn+9x7YZvfLPWA74aWsItWu2/YivgmNDhx7cEhk29YEz4sZly5Z82QaSTvUi86+ja1QSkDjPsrpXOADY95aGdtA/tAAAAAASUVORK5CYII="/></i>
-                                <span class="skills__name"> MYSQL </span>
-                            </div>
-                            <div class="skills__bar skills__mysql">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">70%</span>
-                            </div>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">UX/UI</span>
-                            </div>
-                            <div class="skills__bar skills__ux">
-
-                            </div>
-                            <div>
-                                <span class="skills__percentage">60%</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div>
-                        <img src="https://www.infostretch.com/wp-content/uploads/svg/svg_cicd_howitworks.svg" alt="" class="skills__img">
-                    </div>
-                </div>
-            </section>
-
-              <!--===== WORK =====-->
-            <!-- <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-
-                <div class="work__container bd-grid">
-                     <div class="work__img">
-                       <a href="https://microstudy.org/"><img src="assets/img/work3.png" alt="Loding..."></a><p>completed</p>
-                    </div>
-                    <div class="certificate__img">
-                        <a href="https://webchatvvit.000webhostapp.com/login.php"><img src="assets/img/work1.JPG" alt="Loding..."></a><p>completed</p>
-                    </div>
-                    <div class="work__img">
-                        <a href="https://dilshadazam.github.io/youthcommittee/"><img src="assets/img/work4.png" alt="Loding..."></a><p>completed</p>
-                    </div>
-                  
-                    <div class="work__img">
-                       <a href="https://dilshadazam.github.io/foodordering/"><img src="assets/img/dinner.JPG" alt="Loding..."></a><p>progress</p>
-                    </div>
-                    
-                   <div class="work__img">
-                       <a href="https://dilshadazam.github.io/hospital-management/"><img src="assets/img/work5.png" alt="Loding..."></a><p>progress</p>
-                    </div>
-                    <div class="work__img">
-                        <img src="assets/img/work6.png" alt="Loding..."><p>progress</p>
-                    </div>
-                </div>
-            </section> -->
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Collaboration</h2>
-                <div class="home__data">
-                <!-- <a href="https://drive.google.com/file/d/1nhpcEcLhm_ydWFmKY0EUCAIM8WtRbjsf/view?usp=sharing" class="button">Resume </a> -->
-                </div>
-                <div class="contact__container bd-grid">
-                  <b><img 
-
-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgA
-
-AABgAAAAYCAYAAADgdz34AAABF0lEQVRIS
-
-+2U0Q3CMAxE2wlgA8oEMAKbABvAJLABsElHgA1gA5gA/KoY
-
-hSipS6A/CEtWmtS
-
-+812qlkXPUfaMX/wmwUxs20lWmfadpW8pWdMfs4iCUSa4to
-
-ExThHcXdVV1rXkviPZQuo2kkNX3wwfU6AEigsBRBDGAkCAIfD
-
-DJMDHreRA8ijJntWPqWy4L9ab5Mrtn8O3KeAdjSiYOAW
-
-+ZUyslpycAgZQB0wFSo4FKJm70SEkICAObnK10CTwLfCfAVTL
-
-OFdLlFBrkwTh5frgqkYtUwXhnXD+EUFKnX
-
-+ebVEX8FYFoYchYNcfo6kgdRdfI7CsaPsYtPciDxUba6oQjHqLA
-
-HA
-
-+6TqXwFL48t5S8BZYrPhPYFr4AI3POBnLN2QjAAAAAElFTkSuQ
-
-                      mCC"/><p> <a href="mailto:dilshadazam.official@gmail.com"><b>dilshadazam.official@gmail.com</a></b></p>
-                Connect me on Whatsapp <a href="https://wa.me/qr/SRRZM3CYCPUFE1" class="home__social-icon"><i class='bx bxl-whatsapp' ></i></a> </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Er Dilshad Azam</p>
-            <div class="footer__social">
-                <a href="https://www.linkedin.com/in/md-dilshad-a-0b9308110/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p>&#169; 2021 copyright all right reserved</p>
-        </footer>
+
+            <div class="home__img">
+                <img src="assets/img/profile1.png"
+                     alt="Md Dilshad Azam - Full Stack Developer">
+            </div>
+
+        </section>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- ABOUT -->
+        <section class="about section" id="about">
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about__container bd-grid">
+
+                <div class="about__img">
+                    <img src="assets/img/profilee.jpeg"
+                         alt="Dilshad Azam">
+                    <h4>Full Stack Developer</h4>
+                </div>
+
+                <div>
+
+                    <h2 class="about__subtitle">
+                        Building Technology That Solves Real Problems
+                    </h2>
+
+                    <p class="about__text">
+
+                        I am Md Dilshad Azam, a Full Stack Developer with
+                        4+ years of professional experience in designing,
+                        developing and maintaining scalable web applications.
+
+                        <br><br>
+
+                        My core expertise includes React.js, JavaScript,
+                        Node.js, Express.js, MySQL and MongoDB. I work across
+                        frontend and backend development, building reusable
+                        UI components, RESTful APIs, secure authentication
+                        systems and enterprise business applications.
+
+                        <br><br>
+
+                        I have hands-on experience with Redis caching,
+                        session management, multi-tenant architecture,
+                        microservices, JWT, OAuth2, RBAC and database
+                        optimization.
+
+                        <br><br>
+
+                        I also work with AWS, Docker, CI/CD and application
+                        deployment to support reliable production systems.
+
+                        <br><br>
+
+                        I graduated with a Bachelor of Technology in
+                        Computer Science Engineering from Aryabhatta
+                        Knowledge University in 2021.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERIENCE -->
+        <section class="section" id="experience">
+
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="experience__container bd-grid">
+
+                <div class="experience__card">
+
+                    <h3>Full Stack Developer</h3>
+
+                    <h4>Sequro Technologies Pvt. Ltd.</h4>
+
+                    <p class="experience__date">
+                        January 2022 – Present | Bangalore, India
+                    </p>
+
+                    <ul>
+                        <li>
+                            Developed and maintained scalable enterprise
+                            applications using React.js, Node.js,
+                            Express.js, MySQL and MongoDB.
+                        </li>
+
+                        <li>
+                            Built reusable and responsive React components
+                            using component-driven architecture.
+                        </li>
+
+                        <li>
+                            Developed RESTful APIs and microservices for
+                            authentication, business workflows and data processing.
+                        </li>
+
+                        <li>
+                            Implemented JWT authentication, protected routes,
+                            middleware and Role-Based Access Control (RBAC).
+                        </li>
+
+                        <li>
+                            Developed multi-tenant applications with
+                            tenant-level data isolation.
+                        </li>
+
+                        <li>
+                            Optimized application performance through
+                            Redis caching and database query optimization.
+                        </li>
+
+                        <li>
+                            Worked with Docker, AWS EC2, S3, IAM,
+                            CloudWatch and CI/CD.
+                        </li>
+                    </ul>
+
+                    <div class="project__tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>Redis</span>
+                        <span>AWS</span>
+                        <span>Docker</span>
+                    </div>
+
+                </div>
+
+                <div class="experience__card">
+
+                    <h3>Backend Developer Intern</h3>
+
+                    <h4>RK Infosystem Pvt. Ltd.</h4>
+
+                    <p class="experience__date">
+                        December 2020 – May 2021
+                    </p>
+
+                    <ul>
+                        <li>
+                            Assisted in developing backend services
+                            using Node.js and Express.js.
+                        </li>
+
+                        <li>
+                            Developed and tested REST APIs.
+                        </li>
+
+                        <li>
+                            Worked with MySQL database design and SQL queries.
+                        </li>
+
+                        <li>
+                            Supported authentication, debugging,
+                            API integration and application maintenance.
+                        </li>
+                    </ul>
+
+                    <div class="project__tech">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>REST APIs</span>
+                        <span>MySQL</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="skills section" id="skills">
+
+            <h2 class="section-title">Technical Skills</h2>
+
+            <div class="skills__container bd-grid">
+
+                <div class="skill__groups">
+
+                    <div class="skill__group">
+                        <h3>Frontend Development</h3>
+                        <div class="skill__tags">
+                            <span class="skill__tag">React.js</span>
+                            <span class="skill__tag">JavaScript ES6+</span>
+                            <span class="skill__tag">Next.js</span>
+                            <span class="skill__tag">HTML5</span>
+                            <span class="skill__tag">CSS3</span>
+                            <span class="skill__tag">Tailwind CSS</span>
+                            <span class="skill__tag">Responsive UI</span>
+                            <span class="skill__tag">Component Architecture</span>
+                        </div>
+                    </div>
+
+                    <div class="skill__group">
+                        <h3>Backend Development</h3>
+                        <div class="skill__tags">
+                            <span class="skill__tag">Node.js</span>
+                            <span class="skill__tag">Express.js</span>
+                            <span class="skill__tag">RESTful APIs</span>
+                            <span class="skill__tag">Microservices</span>
+                            <span class="skill__tag">Middleware</span>
+                            <span class="skill__tag">API Integration</span>
+                        </div>
+                    </div>
+
+                    <div class="skill__group">
+                        <h3>Database & Caching</h3>
+                        <div class="skill__tags">
+                            <span class="skill__tag">MySQL</span>
+                            <span class="skill__tag">MongoDB</span>
+                            <span class="skill__tag">SQL</span>
+                            <span class="skill__tag">Redis</span>
+                            <span class="skill__tag">Sequelize ORM</span>
+                            <span class="skill__tag">Query Optimization</span>
+                            <span class="skill__tag">Session Management</span>
+                            <span class="skill__tag">Pub/Sub</span>
+                        </div>
+                    </div>
+
+                    <div class="skill__group">
+                        <h3>Authentication & Architecture</h3>
+                        <div class="skill__tags">
+                            <span class="skill__tag">JWT</span>
+                            <span class="skill__tag">OAuth2</span>
+                            <span class="skill__tag">RBAC</span>
+                            <span class="skill__tag">Protected Routes</span>
+                            <span class="skill__tag">Multi-Tenant Architecture</span>
+                            <span class="skill__tag">Data Isolation</span>
+                        </div>
+                    </div>
+
+                    <div class="skill__group">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill__tags">
+                            <span class="skill__tag">AWS EC2</span>
+                            <span class="skill__tag">AWS S3</span>
+                            <span class="skill__tag">IAM</span>
+                            <span class="skill__tag">CloudWatch</span>
+                            <span class="skill__tag">Docker</span>
+                            <span class="skill__tag">CI/CD</span>
+                            <span class="skill__tag">DigitalOcean</span>
+                        </div>
+                    </div>
+
+                    <div class="skill__group">
+                        <h3>Tools & Practices</h3>
+                        <div class="skill__tags">
+                            <span class="skill__tag">Git</span>
+                            <span class="skill__tag">GitHub</span>
+                            <span class="skill__tag">Postman</span>
+                            <span class="skill__tag">Agile / Scrum</span>
+                            <span class="skill__tag">Debugging</span>
+                            <span class="skill__tag">Code Reviews</span>
+                            <span class="skill__tag">Performance Optimization</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+
+            <h2 class="section-title">Key Projects</h2>
+
+            <div class="projects__container bd-grid">
+
+                <!-- PROJECT 1 -->
+                <div class="project__card">
+
+                    <h3>01. Loan Origination Platform</h3>
+
+                    <h4>Customer Portal & Back-Office CRM</h4>
+
+                    <p class="experience__date">
+                        Role: React.js Frontend Developer
+                    </p>
+
+                    <p>
+                        Developed a digital loan origination platform
+                        supporting end-to-end loan application workflows
+                        for customers and back-office administrators.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Built multi-step loan application forms
+                            with validation and conditional rendering.
+                        </li>
+                        <li>
+                            Integrated APIs for loan status, KYC verification,
+                            commissions, payouts and customer information.
+                        </li>
+                        <li>
+                            Developed reusable dashboards, tables,
+                            forms and notification components.
+                        </li>
+                        <li>
+                            Implemented role-based access and protected
+                            application workflows.
+                        </li>
+                    </ul>
+
+                    <div class="project__tech">
+                        <span>React.js</span>
+                        <span>JavaScript</span>
+                        <span>REST APIs</span>
+                        <span>Tailwind CSS</span>
+                        <span>RBAC</span>
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+                <div class="project__card">
+
+                    <h3>02. Arbitration Management System</h3>
+
+                    <h4>Web CRM</h4>
+
+                    <p class="experience__date">
+                        Role: Frontend Developer
+                    </p>
+
+                    <p>
+                        Developed a web-based system for managing
+                        end-to-end arbitration workflows and case lifecycles.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Built interfaces for case creation,
+                            assignment, tracking and decision management.
+                        </li>
+                        <li>
+                            Developed dashboards for administrators,
+                            case managers and arbitrators.
+                        </li>
+                        <li>
+                            Integrated REST APIs and microservices
+                            for case data and document management.
+                        </li>
+                        <li>
+                            Implemented OAuth2/token-based authentication,
+                            RBAC and Redis caching.
+                        </li>
+                        <li>
+                            Created dynamic tables, filters,
+                            workflow screens and notifications.
+                        </li>
+                    </ul>
+
+                    <div class="project__tech">
+                        <span>React.js</span>
+                        <span>Tailwind CSS</span>
+                        <span>REST APIs</span>
+                        <span>Redis</span>
+                        <span>OAuth2</span>
+                        <span>Microservices</span>
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 3 -->
+                <div class="project__card">
+
+                    <h3>03. Multi-Tenant Banking CRM & MFA Platform</h3>
+
+                    <h4>Banking Application & Authentication Services</h4>
+
+                    <p class="experience__date">
+                        Role: Full Stack / Backend Developer
+                    </p>
+
+                    <p>
+                        Designed and developed a multi-tenant banking
+                        application supporting configurable banking
+                        services and Multi-Factor Authentication.
+                    </p>
+
+                    <ul>
+                        <li>
+                            Developed backend services and REST APIs
+                            using Node.js and Express.js.
+                        </li>
+                        <li>
+                            Implemented bank-level CRM controls
+                            and tenant-level data isolation.
+                        </li>
+                        <li>
+                            Developed configurable customer MFA
+                            preferences during onboarding.
+                        </li>
+                        <li>
+                            Implemented SMS OTP, Split OTP (SMS + Email),
+                            secret questions, MCQ-based and password
+                            verification workflows.
+                        </li>
+                        <li>
+                            Implemented secure API communication
+                            and role-based access controls.
+                        </li>
+                    </ul>
+
+                    <div class="project__tech">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>React.js</span>
+                        <span>MySQL</span>
+                        <span>REST APIs</span>
+                        <span>MFA</span>
+                        <span>RBAC</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section class="section" id="education">
+
+            <h2 class="section-title">Education & Training</h2>
+
+            <div class="about__container bd-grid">
+
+                <div class="education__card">
+
+                    <h3>Bachelor of Technology</h3>
+
+                    <h4>Computer Science Engineering</h4>
+
+                    <p>
+                        Aryabhatta Knowledge University
+                    </p>
+
+                    <p class="experience__date">
+                        2017 – 2021 | SGPA: 7.98
+                    </p>
+
+                </div>
+
+                <div class="education__card">
+
+                    <h3>Training & Achievements</h3>
+
+                    <ul>
+                        <li>Full Stack Development Training – IIT Kanpur</li>
+                        <li>Node.js & MySQL – NQT Test</li>
+                        <li>AWS Cloud Architecture – Udemy</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+
+            <h2 class="section-title">Let's Collaborate</h2>
+
+            <div class="contact__container bd-grid">
+
+                <div class="contact__details">
+
+                    <h2>Have a project or opportunity?</h2>
+
+                    <p>
+                        I'm interested in Full Stack Developer,
+                        React.js Developer and Node.js Developer
+                        opportunities.
+                    </p>
+
+                    <p>
+                        <i class="bx bx-envelope"></i>
+                        <a href="mailto:dilshadazam.official@gmail.com">
+                            dilshadazam.official@gmail.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="bx bx-phone"></i>
+                        <a href="tel:+917488586620">
+                            +91 7488586620
+                        </a>
+                    </p>
+
+                    <p>
+                        <i class="bx bx-map"></i>
+                        Bangalore, India
+                    </p>
+
+                    <br>
+
+                    <a href="mailto:dilshadazam.official@gmail.com"
+                       class="button">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+     
+
+        <div class="footer__social">
+
+            <a href="https://www.linkedin.com/in/md-dilshad-a-0b9308110/"
+               target="_blank" rel="noopener noreferrer"
+               class="footer__icon">
+                <i class="bx bxl-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/dilshadazam"
+               target="_blank" rel="noopener noreferrer"
+               class="footer__icon">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="https://wa.me/qr/SRRZM3CYCPUFE1"
+               target="_blank" rel="noopener noreferrer"
+               class="footer__icon">
+                <i class="bx bxl-whatsapp"></i>
+            </a>
+
+        </div>
+
+        <p>
+            &#169; 2026 Md Dilshad Azam. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
 </html>
